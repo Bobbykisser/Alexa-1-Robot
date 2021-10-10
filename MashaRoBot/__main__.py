@@ -709,7 +709,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@wolfxbotz}", "[𝐖𝐨𝐥𝐟𝐗 𝐈𝐬 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 𝐓𝐨 𝐇𝐨𝐰𝐥🐺](https://telegra.ph/file/c545bcb7d4ec33814c596.mp4)", parse_mode=ParseMode.MARKDOWN)
+            dispatcher.bot.sendMessage(f"@wolfxbotz}", "𝐖𝐨𝐥𝐟𝐗 𝐈𝐬 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 𝐓𝐨 𝐇𝐨𝐰𝐥 [🐺](https://telegra.ph/file/c545bcb7d4ec33814c596.mp4)", parse_mode=ParseMode.MARKDOWN)
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
