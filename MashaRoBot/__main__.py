@@ -709,7 +709,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Lovely is back with explosive features.✨")
+            dispatcher.bot.sendMessage(f"@wolfxbotz", "𝐖𝐨𝐥𝐟𝐗 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 𝐓𝐨 𝐇𝐨𝐰𝐥🐺")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
