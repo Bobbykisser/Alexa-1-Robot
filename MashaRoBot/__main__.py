@@ -234,7 +234,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_video(
-            START_IMG, caption= "<code>WolfX is Started Sucefully\nI am Awake Since</code>: <code>{}</code>".format(
+            START_IMG, caption= "<code>WolfX is Started Sucefully✅\nI am Awake Since</code>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
