@@ -74,43 +74,41 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello I'm 𝕷𝖔𝖛𝖊𝖑𝖞 𝕽𝖔𝖇𝖔𝖙 ,
-༒︎ I ᴀᴍ ᴍᴜʟᴛɪ ᴛᴀʟᴇɴᴛᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ᴏsᴍ ғᴇᴀᴛᴜʀᴇs[.](https://telegra.ph/file/bfd2b8688249cbfb901b0.jpg)
+Hello I'm [𝐰𝐨𝐥𝐟 - 𝐗](https://telegra.ph/file/345cd2da67a5c57189810.jpg) ,
 
 ➪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
 
-➪ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ [ᴍᴀsᴛᴇʀ](t.me/TUSHAR204) ғᴏʀ ᴀɴʏ ǫᴜᴇʀʏ ᴀɴᴅ [ᴀᴘᴘᴇᴀʟ](https://t.me/LOVELYAPPEAL) ʜᴇʀᴇ.
+➪ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ [Hᴀᴄᴋᴇʀ] ғᴏʀ ᴀɴʏ ǫᴜᴇʀʏ ᴀɴᴅ [Hᴀᴄᴋᴇʀ](https://t.me/Hollywood_movies_forever) ʜᴇʀᴇ.
 
 ➪ ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ʜᴇʟᴘ ᴛᴏ ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ᴀɴᴅ ᴍʏ ғᴇᴀᴛᴜʀᴇs.
 
-➪ Pᴏᴡᴇʀᴇᴅ ʙʏ [𝕷𝖔𝖇𝖊 𝕱𝖆𝖎𝖑𝖚𝖗𝖊](t.me/shayri_of_loves)
+➪ Pᴏᴡᴇʀᴇᴅ ʙʏ [𝐰𝐨𝐥𝐟 - 𝐗](https://t.me/Hollywood_movies_forever)
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Aᴅᴅ ʟᴏᴠᴇʟʏ ᴛᴏ ɢʀᴏᴜᴘ ➕️", url="t.me/LOVELYR_OBOT?startgroup=true"),
+            text="➕️ Aᴅᴅ ᴡᴏʟғ x ᴛᴏ ɢʀᴏᴜᴘ ➕️", url="t.me/WolfXRobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ℹ️Aʙᴏᴜᴛ", callback_data="masha_"),
-        InlineKeyboardButton(text="🆘Hᴇʟᴘ", callback_data="help_back"),
+        InlineKeyboardButton(text="❓𝐇𝐞𝐥𝐩", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="✨Lᴏᴠᴇʟʏ ʟᴏɢs✨", url="t.me/LOV3LYLOGS"),
+            text="💀𝐋𝐨𝐠𝐬💀", url="https://t.me/wolfxbots"),
         InlineKeyboardButton(
-            text="👥Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ👥", url="https://t.me/LOVELYAPPEAL"),
+            text="🎉𝐒𝐮𝐩𝐩𝐨𝐫𝐭🎉", url="https://t.me/wolfxbots"),
     ],
     [  
-        InlineKeyboardButton(text="😈Lᴏᴠᴇʟʏ ᴅᴇᴠs😈", url="https://t.me/LOVELYDEVS"
+        InlineKeyboardButton(text="👨‍💻𝐎𝐰𝐧𝐞𝐫👨‍💻", url="https://t.me/HMF_OWNER_1"
     ),
     ], 
     [
-        InlineKeyboardButton(text="❤️Lᴏᴠᴇ sᴛᴀᴛᴜs❤️", url="https://t.me/shayri_of_loves"
+        InlineKeyboardButton(text="📲𝐌𝐨𝐯𝐢𝐞𝐬📲", url="https://t.me/Hollywood_movies_forever"
     ), 
     ],
     [   
-        InlineKeyboardButton(text="🔔Uᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ🔔", url="https://t.me/ABOUTVEDMAT"
+        InlineKeyboardButton(text="💥𝐔𝐩𝐝𝐚𝐭𝐞𝐬💥", url="https://t.me/PigasusUpdates"
     ),
     ],
 ]
