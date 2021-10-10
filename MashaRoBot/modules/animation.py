@@ -36,6 +36,14 @@ EDIT_TIMES = 10
 
 
 
+#sleep how many times after each edit in 'hack' 
+EDIT_SLEEP = 1
+#edit how many times in 'hack' 
+EDIT_TIMES = 10
+
+
+
+
 #sleep how many times after each edit in 'earthanimation' 
 EDIT_SLEEP = 1
 #edit how many times in 'earthanimation' 
@@ -120,6 +128,17 @@ love_siren = [
             "🖤🖤🖤💜💜💜💙💙💙\n❤️❤️❤️🧡🧡🧡💚💚💚",
             "💛💛💛💙💙💙❤️❤️❤️\n💜💜💜❤️❤️❤️🧡🧡🧡"
 ]
+
+
+weather_you = [
+            "☁️",
+            "🌥",
+            "⛅️",    
+            "🌤",
+            "☀️",
+]
+
+
 
 
 hack_you = [
@@ -316,6 +335,22 @@ def hack(update: Update, context: CallbackContext):
         msg.edit_text(hack_you[x%5])
         time.sleep(EDIT_SLEEP)
     msg.edit_text('successful hacked all data send on my Database')
+
+
+
+
+
+
+
+@user_admin
+@run_async
+def weather(update: Update, context: CallbackContext):
+    bot, args = context.bot, context.args
+    msg = update.effective_message.reply_text('Today Weather 🤔') 
+    for x in range(EDIT_TIMES):
+        msg.edit_text(weather_you[x%5])
+        time.sleep(EDIT_SLEEP)
+    msg.edit_text('Sunny Day 🌞')
 
 
 
