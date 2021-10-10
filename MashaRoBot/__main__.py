@@ -97,7 +97,7 @@ buttons = [
         InlineKeyboardButton(
             text="💀𝐋𝐨𝐠𝐬💀", url="https://t.me/wolfxbots"),
         InlineKeyboardButton(
-            text="🎉𝐒𝐮𝐩𝐩𝐨𝐫𝐭🎉", url="https://t.me/wolfxbots"),
+            text="🎉𝐒𝐮𝐩𝐩𝐨𝐫𝐭🎉", url="https://t.me/joinchat/1QsX8u22a1kwMjhl"),
     ],
     [  
         InlineKeyboardButton(text="👨‍💻𝐎𝐰𝐧𝐞𝐫👨‍💻", url="https://t.me/HMF_OWNER_1"
@@ -122,6 +122,7 @@ HELP_STRINGS = """
 𖣘 *If you facing any issue or find any bugs in any command then you can report it in @LOVELYAPPEAL* [.](https://telegra.ph/file/cbbf01ed6f013ce07d54f.jpg)
 """
 
+START_IMG = "https://telegra.ph/file/5df6b06b0e0e3da0685f3.mp4"
 
 DONATE_STRING = """No need.. I'm rich"""
 
@@ -232,14 +233,23 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_text(
-            "I'm [awake](https://telegra.ph/file/5df6b06b0e0e3da0685f3.mp4) already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+        update.effective_message.reply_video(
+            START_IMG, caption= "<code>WolfX is Started Sucefully\nI am Awake Since</code>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                  [
+                  InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/joinchat/1QsX8u22a1kwMjhl")
+                  ],
+                  [
+                  InlineKeyboardButton(text="Oᴡɴᴇʀ", url="https://t.me/HMF_OWNER_1")
+                  ]
+                ]
+            ),
         )
-
-
+      
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
     # Log the error before we do anything else, so we can see it even if something breaks.
