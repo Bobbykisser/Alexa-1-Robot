@@ -95,7 +95,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💀𝐋𝐨𝐠𝐬💀", url="https://t.me/wolfxbots"),
+            text="💀𝐋𝐨𝐠𝐬💀", url="https://t.me/wolfxbotz"),
         InlineKeyboardButton(
             text="🎉𝐒𝐮𝐩𝐩𝐨𝐫𝐭🎉", url="https://t.me/joinchat/1QsX8u22a1kwMjhl"),
     ],
