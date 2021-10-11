@@ -72,8 +72,10 @@ ENUM_FUNC_MAP = {
 }
 
 VERIFIED_USER_WAITLIST = {}
-AASF = "https://telegra.ph/file/c47faa3585dbe6fa21fff.jpg"
-#OWNER = ""
+
+OWNER_IMG = "https://telegra.ph/file/6462f740dc6121a21455c.jpg"
+LEAVE_IMG = "https://telegra.ph/file/759fa2a8057c14a1832fa.mp4"
+AASF_IMG = "https://telegra.ph/file/c47faa3585dbe6fa21fff.jpg"
 
 # do not async
 def send(update, message, keyboard, backup_message):
@@ -190,8 +192,8 @@ def new_member(update: Update, context: CallbackContext):
 
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
-                update.effective_message.reply_text(
-                    "Stay Alert, Superior just joined Here.", reply_to_message_id=reply
+                update.effective_message.reply_photo(
+                    OWNER_IMG, caption= "Beware!! A Pero Was Just Arrived On The Chat...", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -202,20 +204,20 @@ def new_member(update: Update, context: CallbackContext):
 
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
-                  update.effective_message.reply_photo(
-                      AASF, caption= "𝐖𝐨𝐥𝐟𝐗 𝐏𝐫𝐢𝐝𝐞𝐝 𝐓𝐨 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐡𝐞 𝐀𝐀𝐒𝐅", reply_to_message_id=reply
-                )
-          welcome_log = (
+                update.effective_message.reply_photo(
+                    AASF_IMG, caption= "𝐖𝐨𝐥𝐟𝐗 𝐏𝐫𝐢𝐝𝐞𝐝 𝐓𝐨 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐡𝐞 𝐀𝐀𝐒𝐅", reply_to_message_id=reply
+                )                
+                welcome_log = (
                     f"{html.escape(chat.title)}\n"
                     f"#USER_JOINED\n"
-                    f"Bot Dev just j"
+                    f"Bot Dev just joined the group"
                 )
                 continue
 
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_text(
-                    "Whoa! A Legend disaster just joined! Stay Alert!",
+                    "Whoa! A Dragon disaster just joined! Stay Alert!",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -228,7 +230,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Support
             elif new_mem.id in DEMONS:
                 update.effective_message.reply_text(
-                    "Huh! Someone with a Satan disaster level just joined!",
+                    "Huh! Someone with a Demon disaster level just joined!",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -241,7 +243,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Whitelisted
             elif new_mem.id in TIGERS:
                 update.effective_message.reply_text(
-                    "Fearless! A Monster disaster just joined!", reply_to_message_id=reply
+                    "Roar! A Tiger disaster just joined!", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -253,7 +255,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Tigers
             elif new_mem.id in WOLVES:
                 update.effective_message.reply_text(
-                    "Awoo! An Immortal disaster just joined!", reply_to_message_id=reply
+                    "Awoo! A Wolf disaster just joined!", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -545,15 +547,15 @@ def left_member(update: Update, context: CallbackContext):
 
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
-                update.effective_message.reply_text(
-                    "Sad! Superior left's..", reply_to_message_id=reply
+                update.effective_message.reply_video(
+                    LEAVE_IMG, caption=   "Oh! Aasf! He left😢...", reply_to_message_id=reply
                 )
                 return
 
             # Give the devs a special goodbye
             elif left_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "See you later in my Emcee powerhouse!",
+                    "See you later at the Hero's Association!",
                     reply_to_message_id=reply,
                 )
                 return
@@ -1092,24 +1094,26 @@ def __chat_settings__(chat_id, user_id):
     )
 
 
+
+
+
 __help__ = """
 *Admins only:*
- ❍ /welcome <on/off>*:* enable/disable welcome messages.
- ❍ /welcome*:* shows current welcome settings.
- ❍ /welcome noformat*:* shows current welcome settings, without the formatting - useful to recycle your welcome messages!
- ❍ /goodbye*:* same usage and args as `/welcome`.
- ❍ /setwelcome <sometext>*:* set a custom welcome message. If used replying to media, uses that media.
- ❍ /setgoodbye <sometext>*:* set a custom goodbye message. If used replying to media, uses that media.
- ❍ /resetwelcome*:* reset to the default welcome message.
- ❍ /resetgoodbye*:* reset to the default goodbye message.
- ❍ /cleanwelcome <on/off>*:* On new member, try to delete the previous welcome message to avoid spamming the chat.
- ❍ /welcomemutehelp*:* gives information about welcome mutes.
- ❍ /cleanservice <on/off*:* deletes telegrams welcome/left service messages. 
+ - /welcome <on/off>*:* enable/disable welcome messages.
+ - /welcome*:* shows current welcome settings.
+ - /welcome noformat*:* shows current welcome settings, without the formatting - useful to recycle your welcome messages!
+ - /goodbye*:* same usage and args as `/welcome`.
+ - /setwelcome <sometext>*:* set a custom welcome message. If used replying to media, uses that media.
+ - /setgoodbye <sometext>*:* set a custom goodbye message. If used replying to media, uses that media.
+ - /resetwelcome*:* reset to the default welcome message.
+ - /resetgoodbye*:* reset to the default goodbye message.
+ - /cleanwelcome <on/off>*:* On new member, try to delete the previous welcome message to avoid spamming the chat.
+ - /welcomemutehelp*:* gives information about welcome mutes.
+ - /cleanservice <on/off*:* deletes telegrams welcome/left service messages. 
  *Example:*
 user joined chat, user left chat.
-
 *Welcome markdown:* 
- ❍ /welcomehelp*:* view more formatting information for custom welcome/goodbye messages.
+ - /welcomehelp*:* view more formatting information for custom welcome/goodbye messages.
 """
 
 NEW_MEM_HANDLER = MessageHandler(Filters.status_update.new_chat_members, new_member)
@@ -1144,7 +1148,7 @@ dispatcher.add_handler(CLEAN_SERVICE_HANDLER)
 dispatcher.add_handler(BUTTON_VERIFY_HANDLER)
 dispatcher.add_handler(WELCOME_MUTE_HELP)
 
-__mod_name__ = "Aʀʀɪᴠᴀʟ🥰"
+__mod_name__ = "Greetings"
 __command_list__ = []
 __handlers__ = [
     NEW_MEM_HANDLER,
