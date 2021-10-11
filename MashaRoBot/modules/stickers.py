@@ -122,7 +122,7 @@ def kang(update: Update, context: CallbackContext):
         elif msg.reply_to_message.sticker and msg.reply_to_message.sticker.emoji:
             sticker_emoji = msg.reply_to_message.sticker.emoji
         else:
-            sticker_emoji = "✨"
+            sticker_emoji = "🐺"
 
         if not is_animated:
             try:
@@ -279,7 +279,7 @@ def kang(update: Update, context: CallbackContext):
                 png_sticker = urlemoji[1]
                 sticker_emoji = urlemoji[2]
             except IndexError:
-                sticker_emoji = "⚓"
+                sticker_emoji = "🐺"
             urllib.urlretrieve(png_sticker, kangsticker)
             im = Image.open(kangsticker)
             maxsize = (512, 512)
@@ -458,7 +458,7 @@ __help__ = """
 • `/stickers`*:* Find stickers for given term on combot sticker catalogue
 """
 
-__mod_name__ = "Sᴛɪᴄᴋᴇʀs✨"
+__mod_name__ = "𝐒𝐭𝐢𝐜𝐤𝐞𝐫𝐬"
 STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid)
 GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker)
 KANG_HANDLER = DisableAbleCommandHandler(["kang", "steal"], kang, admin_ok=True)
