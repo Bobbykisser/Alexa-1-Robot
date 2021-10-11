@@ -73,7 +73,7 @@ ENUM_FUNC_MAP = {
 
 VERIFIED_USER_WAITLIST = {}
 
-OWNER_IMG = "https://telegra.ph/file/6462f740dc6121a21455c.jpg"
+OWNER_IMG = "https://telegra.ph/file/31bf0ce0893b5f1c34a22.jpg"
 LEAVE_IMG = "https://telegra.ph/file/759fa2a8057c14a1832fa.mp4"
 AASF_IMG = "https://telegra.ph/file/c47faa3585dbe6fa21fff.jpg"
 
