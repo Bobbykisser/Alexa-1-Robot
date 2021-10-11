@@ -278,7 +278,7 @@ def info(update: Update, context: CallbackContext):
         if spamwtc:
             text += "\n\n<b>This person is Spamwatched!</b>"
             text += f"\nReason: <pre>{spamwtc.reason}</pre>"
-            text += "\nAppeal at @LOVELYAPPEAL"
+            text += "\nAppeal at @wolfxbotz"
         else:
             pass
     except:
@@ -290,7 +290,7 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nThe Disaster level of this person is 'Superior'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is member of 'lovely powerhouse'."
+        text += "\n\nThis user is member of 'WolfXBotz'."
         disaster_level_present = True
     elif user.id in DRAGONS:
         text += "\n\nThe Disaster level of this person is 'Legend'."
@@ -306,7 +306,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/LOVELYUPDATES/2">?</a>]'.format(
+        text += ' [<a href="https://t.me/wolfxbotz/488">?</a>]'.format(
             bot.username
         )
 
@@ -479,7 +479,7 @@ def set_about_bio(update: Update, context: CallbackContext):
 
         if user_id == bot.id and sender_id not in DEV_USERS:
             message.reply_text(
-                "Erm... yeah, I only trust Lovely powerhouse to set my bio."
+                "Erm... yeah, I only trust WolfX Members to set my bio."
             )
             return
 
@@ -567,7 +567,7 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "Iɴғᴏsℹ️"
+__mod_name__ = "𝐈𝐧𝐟𝐨𝐬"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER,
