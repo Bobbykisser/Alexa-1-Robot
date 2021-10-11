@@ -79,4 +79,4 @@ __New couple of the day may be chosen at 12AM {tomorrow}__"""
 __help__ = """
  ❍ /couples - To Choose Couple Of The Day
  """
-__mod_name__ = "Cᴏᴜᴘʟᴇs😘"
+__mod_name__ = "𝐂𝐨𝐮𝐩𝐥𝐞𝐬"
