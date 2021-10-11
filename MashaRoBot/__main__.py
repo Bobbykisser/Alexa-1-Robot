@@ -116,10 +116,10 @@ buttons = [
 
 
 HELP_STRINGS = """
-༆*LOVELY comes with many special features in it*༆
-꧁*CHECK ALL BUTTON BELOW TO EXPLORE EVERY COMMANDS OF LOVELY*꧂
-𖣘 *All commands can either be used with* `/` *or* `!`.
-𖣘 *If you facing any issue or find any bugs in any command then you can report it in @LOVELYAPPEAL* [.](https://telegra.ph/file/3c7a768a89335d9af9b5a.jpg)
+*༆WOLF - X comes with many special features in it༆
+꧁CHECK ALL BUTTON BELOW TO EXPLORE EVERY COMMANDS OF WOLF-X꧂
+𖣘 All commands can either be used with / or !.
+𖣘 If you facing any issue or find any bugs in any command then you can report it @wolfxbotz /  @Hollywood_movies_forever* [.](https://telegra.ph/file/3c7a768a89335d9af9b5a.jpg)
 """
 
 START_IMG = "https://telegra.ph/file/5df6b06b0e0e3da0685f3.mp4"
