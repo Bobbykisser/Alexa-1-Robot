@@ -72,7 +72,8 @@ ENUM_FUNC_MAP = {
 }
 
 VERIFIED_USER_WAITLIST = {}
-
+AASF = "https://telegra.ph/file/c47faa3585dbe6fa21fff.jpg"
+#OWNER = ""
 
 # do not async
 def send(update, message, keyboard, backup_message):
@@ -201,14 +202,13 @@ def new_member(update: Update, context: CallbackContext):
 
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
-                update.effective_message.reply_text(
-                    "Be Patient! A member of the Lovely powerhouse just joined.",
-                    reply_to_message_id=reply,
+                  update.effective_message.reply_photo(
+                      AASF, caption= "𝐖𝐨𝐥𝐟𝐗 𝐏𝐫𝐢𝐝𝐞𝐝 𝐓𝐨 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐡𝐞 𝐀𝐀𝐒𝐅", reply_to_message_id=reply
                 )
-                welcome_log = (
+          welcome_log = (
                     f"{html.escape(chat.title)}\n"
                     f"#USER_JOINED\n"
-                    f"Bot Dev just joined the group"
+                    f"Bot Dev just j"
                 )
                 continue
 
