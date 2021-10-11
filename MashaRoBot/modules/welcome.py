@@ -74,9 +74,8 @@ ENUM_FUNC_MAP = {
 VERIFIED_USER_WAITLIST = {}
 
 OWNER_IMG = "https://telegra.ph/file/31bf0ce0893b5f1c34a22.jpg"
-LEAVE_IMG = "https://telegra.ph/file/759fa2a8057c14a1832fa.mp4"
 AASF_IMG = "https://telegra.ph/file/c47faa3585dbe6fa21fff.jpg"
-
+LEAVE_IMG = "https://telegra.ph/file/cadacc56157cae00d69f5.jpg"
 # do not async
 def send(update, message, keyboard, backup_message):
     chat = update.effective_chat
@@ -193,7 +192,7 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_photo(
-                    OWNER_IMG, caption= "Beware!! A Pero Was Just Arrived On The Chat...", reply_to_message_id=reply
+                    OWNER_IMG, caption= "𝐋𝐞𝐚𝐝𝐞𝐫 𝐎𝐟 𝐖𝐨𝐥𝐟𝐗 𝐉𝐮𝐬𝐭 𝐉𝐨𝐢𝐧𝐞𝐝", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -548,7 +547,7 @@ def left_member(update: Update, context: CallbackContext):
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
                 update.effective_message.reply_video(
-                    LEAVE_IMG, caption=   "Oh! Aasf! He left😢...", reply_to_message_id=reply
+                    LEAVE_IMG, caption=   "𝐖𝐨𝐥𝐟𝐗 𝐋𝐞𝐚𝐝𝐞𝐫 𝐍𝐞𝐯𝐞𝐫 𝐃𝐢𝐞", reply_to_message_id=reply
                 )
                 return
 
