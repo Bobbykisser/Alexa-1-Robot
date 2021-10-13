@@ -138,8 +138,7 @@ scan_you = [
             "Initialising ◆◆◆◆◇",
             "Initialising ◆◆◆◆◆",
             "「❂ Yᴏᴜ'ʀᴇ Aɴ Aᴜᴛʜᴏʀɪsᴇᴅ Usᴇʀ ❂",
-            "User is a target for enforcement action.
-Enforcement Mode: Lethal Eliminator",
+            "User is a target for enforcement action.",
 ]
 
 
