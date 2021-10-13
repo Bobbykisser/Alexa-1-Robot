@@ -130,12 +130,16 @@ love_siren = [
 ]
 
 
-weather_you = [
-            "☁️",
-            "🌥",
-            "⛅️",    
-            "🌤",
-            "☀️",
+scan_you = [
+            "Connecting to X-Force for a cymatic scan.",
+            "Initialising ◆◇◇◇◇",
+            "Initialising ◆◆◇◇◇",    
+            "Initialising ◆◆◆◇◇",
+            "Initialising ◆◆◆◆◇",
+            "Initialising ◆◆◆◆◆",
+            "「❂ Yᴏᴜ'ʀᴇ Aɴ Aᴜᴛʜᴏʀɪsᴇᴅ Usᴇʀ ❂",
+            "User is a target for enforcement action.
+Enforcement Mode: Lethal Eliminator",
 ]
 
 
@@ -344,13 +348,13 @@ def hack(update: Update, context: CallbackContext):
 
 @user_admin
 @run_async
-def weather(update: Update, context: CallbackContext):
+def scan(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
-    msg = update.effective_message.reply_text('Today Weather 🤔') 
+    msg = update.effective_message.reply_text('Connecting to X-Force for a cymatic scan.') 
     for x in range(EDIT_TIMES):
-        msg.edit_text(weather_you[x%5])
+        msg.edit_text(scan_you[x%5])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('Sunny Day 🌞')
+    msg.edit_text('User Successfully Gbanned On 21 Botz')
 
 
 
@@ -389,7 +393,7 @@ __help__ = """
 """
 KILL_HANDLER = DisableAbleCommandHandler("kill",kill)
 LOVE_HANDLER = DisableAbleCommandHandler("love", love)
-WEATHER_HANDLER = DisableAbleCommandHandler("weather", weather)
+SCAN_HANDLER = DisableAbleCommandHandler("scan", scan)
 HACK_HANDLER = DisableAbleCommandHandler("hack", hack)
 BOMBS_HANDLER = DisableAbleCommandHandler("bombs",bombs)
 MOONANIMATION_HANDLER =DisableAbleCommandHandler("moon",moonanimation)
@@ -398,7 +402,7 @@ BLOCKANIMATION_HANDLER =DisableAbleCommandHandler("block",blockanimation)
 EARTHANIMATION_HANDLER =DisableAbleCommandHandler("earth",earthanimation)
 dispatcher.add_handler(KILL_HANDLER)
 dispatcher.add_handler(LOVE_HANDLER)
-dispatcher.add_handler(WEATHER_HANDLER)
+dispatcher.add_handler(SCAN_HANDLER)
 dispatcher.add_handler(HACK_HANDLER)
 dispatcher.add_handler(BOMBS_HANDLER)
 dispatcher.add_handler(EARTHANIMATION_HANDLER)
