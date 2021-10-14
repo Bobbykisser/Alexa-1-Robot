@@ -3,11 +3,11 @@ import re, os
 from MashaRoBot.events import register
 from MashaRoBot import telethn as tbot
 from MashaRoBot import telethn as tgbot
-PHOTO = ""
+PHOTO = "https://telegra.ph/file/63ec234e1be1f16345e69.jpg"
 @register(pattern=("/alive"))
 async def awake(event):
   LOVELY = event.sender.first_name
-  LOVELY = "**♡ I,m WolfX** \n\n"
+  LOVELY = "**♡ I,m Lovely💕** \n\n"
   LOVELY += "**♡ I'm Working with awesome speed**\n\n"
   LOVELY += "**♡ Lovely : 2.0 LATEST**\n\n"
   LOVELY += "**♡ My Creator :** [𝗧𝗨𝗦𝗛𝗔𝗥😍](t.me/Tushar204)\n\n"
