@@ -104,7 +104,7 @@ buttons = [
     ),
     ], 
     [
-        InlineKeyboardButton(text="📲𝐌𝐨𝐯𝐢𝐞𝐬📲", url="https://t.me/joinchat/r9qx47U5xEZjY2E1"
+        InlineKeyboardButton(text="📲𝐌𝐨𝐯𝐢𝐞𝐬📲", url=https://t.me/joinchat/r9qx47U5xEZjY2E1
     ), 
     ],
     [   
