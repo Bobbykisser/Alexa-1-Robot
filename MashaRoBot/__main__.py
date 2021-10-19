@@ -97,14 +97,14 @@ buttons = [
         InlineKeyboardButton(
             text="💀𝐋𝐨𝐠𝐬💀", url="https://t.me/wolfxbotz"),
         InlineKeyboardButton(
-            text="🎉𝐒𝐮𝐩𝐩𝐨𝐫𝐭🎉", url="https://t.me/joinchat/1QsX8u22a1kwMjhl"),
+            text="🎉𝐒𝐮𝐩𝐩𝐨𝐫𝐭🎉", url="https://t.me/PigasusSupport"),
     ],
     [  
         InlineKeyboardButton(text="👨‍💻𝐎𝐰𝐧𝐞𝐫👨‍💻", url="https://t.me/HMF_OWNER_1"
     ),
     ], 
     [
-        InlineKeyboardButton(text="📲𝐌𝐨𝐯𝐢𝐞𝐬📲", url="https://t.me/joinchat/r9qx47U5xEZjY2E1"
+        InlineKeyboardButton(text="🍿𝐌𝐨𝐯𝐢𝐞𝐬🍿", url="https://t.me/joinchat/r9qx47U5xEZjY2E1"
     ), 
     ],
     [   
